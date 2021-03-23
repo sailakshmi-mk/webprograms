@@ -1,0 +1,48 @@
+#form.php
+
+<html>
+<head>
+<title>insert data in form</title>
+</head>
+<body>
+<form action="getdata.php" method="post">
+Name:
+<input type="text" name="txtname">
+<br><br>
+Roll no:
+<input type="text" name="txtr_no">
+<br><br>
+Address:
+<textarea name="add" type="textarea">
+</textarea>
+<br><br>
+Contact no:
+<input type="text" name="txtc_no">
+<br><br>
+Email id:
+<input type="text" name="txteid">
+<br><br>
+<input type="submit" name="insert" value="save">
+<input type="reset" value="cancel">
+</form>
+</body>
+</html>
+
+
+#getdata.php
+
+<html>
+<head>
+<title>get data from another page</title>
+</head>
+<body>
+<?php
+echo"Name:".$_POST["txtname"]."</br>";
+echo"Rollno:".$_POST["txtr_no"]."</br>";
+echo"Address:".$_POST["add"]."</br>";
+echo"contact no:".$_POST["txtc_no"]."</br>";
+echo"Email id:".$_POST["txteid"]."</br>";
+?>
+</body>
+</html>
+
